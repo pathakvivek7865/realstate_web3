@@ -1,8 +1,8 @@
-import { Epilogue } from "@next/font/google";
+import { DM_Sans } from "@next/font/google";
 import Navbar from "@/components/Navbar";
 import "./globals.css";
 
-const inter = Epilogue({ subsets: ["latin"] });
+const font = DM_Sans({ weight: ["400", "500", "700"], subsets: ["latin"] });
 
 export default function RootLayout({
     children,
@@ -10,7 +10,7 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en" className={`bg-white ${inter.className}`}>
+        <html lang="en" className={`bg-white ${font.className}`}>
             {/*
         <head /> will contain the components returned by the nearest parent
         head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
