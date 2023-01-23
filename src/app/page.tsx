@@ -1,6 +1,9 @@
+"use client";
+
 import PropertyCard from "@components/cards/PropertyCard";
 import { MdMoreHoriz } from "react-icons/md";
 import FilterInputs from "@components/inputs/FilterInputs";
+import Map from "@components/map/Map";
 
 export default function Home() {
     return (
@@ -16,7 +19,7 @@ export default function Home() {
                         <span className="ml-2">More</span>
                     </button>
                 </div>
-                <div className="w-full h-screen p-4 rounded-2xl bg-lightGray"></div>
+                <Map />
             </div>
         </main>
     );
