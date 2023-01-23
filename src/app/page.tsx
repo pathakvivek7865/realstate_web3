@@ -4,7 +4,7 @@ import FilterInputs from "@components/inputs/FilterInputs";
 
 export default function Home() {
     return (
-        <main className="mx-16 mb-16 text-textBlack">
+        <main className="mx-16 mt-8 mb-16 text-textBlack">
             <FilterInputs />
             <div className="flex items-start w-full gap-10 mt-8 justify-evenly">
                 <div className="flex flex-col items-center justify-between w-full h-screen">

@@ -29,7 +29,7 @@ const FilterInputs = () => {
 
             {/* Type */}
             <div className="select-wrapper">
-                <div className="flex items-center pl-6">
+                <div className="flex items-center pl-4">
                     <p>Type: </p>
                     <select className="pl-2 select">
                         <option className="select-option" value="1">
@@ -45,7 +45,7 @@ const FilterInputs = () => {
 
             {/* Min Price */}
             <div className="select-wrapper">
-                <div className="flex items-center pl-6">
+                <div className="flex items-center pl-4">
                     <p className="whitespace-nowrap">Min Price: </p>
                     <select className="pl-2 select">
                         <option className="select-option" value="1">
@@ -61,7 +61,7 @@ const FilterInputs = () => {
 
             {/* Max Price */}
             <div className="select-wrapper">
-                <div className="flex items-center pl-6">
+                <div className="flex items-center pl-4">
                     <p className="whitespace-nowrap">Max Price: </p>
                     <select className="pl-2 select">
                         <option className="select-option" value="1">
@@ -77,7 +77,7 @@ const FilterInputs = () => {
 
             {/* Floor area */}
             <div className="select-wrapper">
-                <div className="flex items-center pl-6">
+                <div className="flex items-center pl-4">
                     <p className="whitespace-nowrap">Floor area: </p>
                     <select className="pl-2 select">
                         <option className="select-option" value="1">
