@@ -27,7 +27,7 @@ export default function Home() {
 
 import React from "react";
 
-export function Cards() {
+function Cards() {
     return (
         <>
             <PropertyCard
