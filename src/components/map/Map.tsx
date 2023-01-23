@@ -11,13 +11,18 @@ const Map = () => {
         height: "100%",
     };
 
-    const center = useMemo(
-        () => ({
-            lat: 27.700769,
-            lng: 85.30014,
-        }),
-        []
-    );
+    // const center = useMemo(
+    //     () => ({
+    //         lat: 27.700769,
+    //         lng: 85.30014,
+    //     }),
+    //     []
+    // );
+
+    const center = {
+        lat: 27.700769,
+        lng: 85.30014,
+    };
 
     if (!isLoaded) {
         return (
@@ -33,9 +38,7 @@ const Map = () => {
                 mapContainerStyle={containerStyle}
                 center={center}
                 zoom={20}
-            >
-                <Marker position={center} />
-            </GoogleMap>
+            ></GoogleMap>
         </div>
     );
 };

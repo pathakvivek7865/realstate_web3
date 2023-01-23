@@ -5,7 +5,7 @@ import { GoSettings } from "react-icons/go";
 
 const FilterInputs = () => {
     return (
-        <div className="flex items-center justify-between w-full h-10 mt-4 text-xs font-semibold rounded-lg">
+        <div className="flex items-center justify-between w-full h-10 text-xs font-semibold rounded-lg">
             {/* Search */}
             <div className="flex h-full w-[18rem] items-center space-x-2 overflow-hidden rounded-lg bg-lightGray">
                 <FiSearch className="ml-4 text-xl text-darkGray" />
@@ -99,7 +99,7 @@ const FilterInputs = () => {
                     <p className="whitespace-nowrap">More </p>
                 </div>
 
-                <div className="absolute -top-1 -right-1 flex animate-pulse items-center justify-center rounded-full border border-pink-600 bg-transparent p-[2px] ">
+                <div className="absolute -top-1 -right-1 flex animate-pulse items-center justify-center rounded-full border border-pink-600 bg-transparent p-[2px] transition duration-75 ">
                     <div className="h-1.5 w-1.5 rounded-full bg-pink-600 p-[1px] "></div>
                 </div>
             </div>
