@@ -1,10 +1,11 @@
 import PropertyCard from "@components/cards/PropertyCard";
 import { MdMoreHoriz } from "react-icons/md";
+import FilterInputs from "@components/inputs/FilterInputs";
 
 export default function Home() {
     return (
         <main className="mx-16 mb-16 text-textBlack">
-            <div className="w-full h-10 mt-4 rounded-lg bg-lightGray "></div>
+            <FilterInputs />
             <div className="flex items-start w-full gap-10 mt-8 justify-evenly">
                 <div className="flex flex-col items-center justify-between w-full h-screen">
                     <div className="grid h-[90%] w-full grid-cols-2 gap-6">
