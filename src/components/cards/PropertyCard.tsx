@@ -26,7 +26,7 @@ const PropertyCard = ({
     sqft,
 }: PropertyCardProps) => {
     return (
-        <div className="flex aspect-[1] cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-md">
+        <div className="flex aspect-[1.02] cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-md">
             <div className="relative w-full overflow-hidden h-1/2 rounded-2xl bg-primary">
                 <Image
                     src={imageUrl}
@@ -56,7 +56,7 @@ const PropertyCard = ({
                 </p>
                 <div className="grid grid-flow-col gap-2 mt-4">
                     <div className="flex items-center justify-center px-2 py-2 rounded-lg bg-lightGray">
-                        <IoIosBed className="mr-3 text-xl text-red-500" />
+                        <IoIosBed className="mr-3 text-xl text-orange-500" />
                         <p className="text-xs font-bold ">{beds}</p>
                     </div>
                     <div className="flex items-center justify-center px-2 py-1 rounded-lg bg-lightGray">

@@ -3,21 +3,19 @@ import { MdMoreHoriz } from "react-icons/md";
 
 export default function Home() {
     return (
-        <main className="pb-16 mx-16 text-textBlack">
+        <main className="mx-16 mb-16 text-textBlack">
             <div className="w-full h-10 mt-4 rounded-lg bg-lightGray "></div>
             <div className="flex items-start w-full gap-10 mt-8 justify-evenly">
-                <div className="flex flex-col items-center justify-center w-8/12 h-screen">
-                    <div className="grid w-full grid-cols-2 gap-6">
+                <div className="flex flex-col items-center justify-between w-full h-screen">
+                    <div className="grid h-[90%] w-full grid-cols-2 gap-6">
                         <Cards />
                     </div>
-                    <button className="flex items-center px-6 py-2 mt-8 space-x-2 w-fit rounded-xl bg-lightGray">
+                    <button className="flex items-center px-4 py-2 -mb-3 space-x-2 w-fit rounded-xl bg-lightGray">
                         <MdMoreHoriz className="text-2xl text-darkGray" />
                         <span className="ml-2">More</span>
                     </button>
                 </div>
-                <div className="w-8/12 h-screen rounded-3xl bg-lightGray">
-                    s
-                </div>
+                <div className="w-full h-screen p-4 rounded-2xl bg-lightGray"></div>
             </div>
         </main>
     );
