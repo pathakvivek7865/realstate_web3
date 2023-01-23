@@ -13,7 +13,7 @@ export default function Home() {
             </div>
             <div className="flex items-start w-full gap-10 justify-evenly">
                 <div className="flex flex-col items-center justify-between w-full h-screen max-h-screen">
-                    <div className="grid h-[20rem] w-full flex-1 grid-flow-row grid-cols-2 gap-6 pr-6 pb-6  scrollbar-thin scrollbar-track-white scrollbar-thumb-darkGray">
+                    <div className="grid h-[20rem] w-full flex-1 grid-flow-row grid-cols-2 gap-6 pr-6 pb-6  scrollbar-thin scrollbar-track-lightGray scrollbar-thumb-darkGray">
                         <Cards />
                     </div>
                     <button className="flex items-center px-4 py-2 mt-8 space-x-2 w-fit rounded-xl bg-lightGray">

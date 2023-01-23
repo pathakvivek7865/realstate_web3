@@ -2,10 +2,11 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import { RxCaretDown } from "react-icons/rx";
 import { GoSettings } from "react-icons/go";
+import SelectInput from "./SelectInput";
 
 const FilterInputs = () => {
     return (
-        <div className="flex items-center justify-between w-full h-10 text-xs font-semibold rounded-lg">
+        <div className="flex items-center justify-between w-full text-sm font-medium rounded-lg h-9">
             {/* Search */}
             <div className="flex h-full w-[18rem] items-center space-x-2 overflow-hidden rounded-lg bg-lightGray">
                 <FiSearch className="ml-4 text-xl text-darkGray" />
@@ -16,81 +17,99 @@ const FilterInputs = () => {
             </div>
 
             {/* For Sale */}
-            <div className="select-wrapper">
-                <select className="select">
-                    <option className="select-option" value="1">
-                        For Sale
-                    </option>
-                    <option className="select-option" value="2">
-                        For Rent
-                    </option>
-                </select>
-                <RxCaretDown className="text-2xl font-bold text-textBlack" />
-            </div>
+            <SelectInput
+                selectList={[
+                    {
+                        id: 1,
+                        name: "buy",
+                    },
+                    {
+                        id: 2,
+                        name: "sale",
+                    },
+                    {
+                        id: 3,
+                        name: "rent",
+                    },
+                ]}
+                label={"For"}
+            />
 
             {/* Type */}
-            <div className="select-wrapper">
-                <div className="flex items-center pl-4">
-                    <p>Type: </p>
-                    <select className="pl-2 select">
-                        <option className="select-option" value="1">
-                            House
-                        </option>
-                        <option className="select-option" value="2">
-                            For Rent
-                        </option>
-                    </select>
-                </div>
-                <RxCaretDown className="text-2xl font-bold text-darkGray" />
-            </div>
+            <SelectInput
+                selectList={[
+                    {
+                        id: 1,
+                        name: "house",
+                    },
+                    {
+                        id: 2,
+                        name: "appartment",
+                    },
+                    {
+                        id: 3,
+                        name: "land",
+                    },
+                ]}
+                label={"Type: "}
+            />
 
             {/* Min Price */}
-            <div className="select-wrapper">
-                <div className="flex items-center pl-4">
-                    <p className="whitespace-nowrap">Min Price: </p>
-                    <select className="pl-2 select">
-                        <option className="select-option" value="1">
-                            $100k
-                        </option>
-                        <option className="select-option" value="2">
-                            $200k
-                        </option>
-                    </select>
-                </div>
-                <RxCaretDown className="text-2xl font-bold text-darkGray" />
-            </div>
+            <SelectInput
+                selectList={[
+                    {
+                        id: 1,
+                        name: "50k",
+                    },
+                    {
+                        id: 2,
+                        name: "100k",
+                    },
+                    {
+                        id: 3,
+                        name: "200k",
+                    },
+                ]}
+                label={"Min Price: "}
+            />
 
             {/* Max Price */}
-            <div className="select-wrapper">
-                <div className="flex items-center pl-4">
-                    <p className="whitespace-nowrap">Max Price: </p>
-                    <select className="pl-2 select">
-                        <option className="select-option" value="1">
-                            $700k
-                        </option>
-                        <option className="select-option" value="2">
-                            $900k
-                        </option>
-                    </select>
-                </div>
-                <RxCaretDown className="text-2xl font-bold text-darkGray" />
-            </div>
+            <SelectInput
+                selectList={[
+                    {
+                        id: 1,
+                        name: "300k",
+                    },
+                    {
+                        id: 2,
+                        name: "500k",
+                    },
+                    {
+                        id: 3,
+                        name: "1M",
+                    },
+                ]}
+                label={"Max Price: "}
+            />
 
             {/* Floor area */}
-            <div className="select-wrapper">
-                <div className="flex items-center pl-4">
-                    <p className="whitespace-nowrap">Floor area: </p>
-                    <select className="pl-2 select">
-                        <option className="select-option" value="1">
-                            60 m²
-                        </option>
-                        <option className="select-option" value="2">
-                            80 m²
-                        </option>
-                    </select>
-                </div>
-                <RxCaretDown className="text-2xl font-bold text-darkGray" />
-            </div>
+            <SelectInput
+                selectList={[
+                    {
+                        id: 1,
+                        name: "50 m²",
+                    },
+                    {
+                        id: 2,
+                        name: "60 m²",
+                    },
+                    {
+                        id: 3,
+                        name: "70 m²",
+                    },
+                ]}
+                label={"Floor area: "}
+            />
 
             {/* More */}
             <div className="relative select-wrapper">
