@@ -12,12 +12,8 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={`bg-white ${font.className} scrollbar-thin scrollbar-thumb-darkGray`}
+            className={`bg-white ${font.className} scrollbar-thumb-darkGray lg:scrollbar-thin`}
         >
-            {/*
-        <head /> will contain the components returned by the nearest parent
-        head.tsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
             <head />
             <body>
                 <Navbar />

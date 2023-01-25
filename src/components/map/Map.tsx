@@ -1,5 +1,6 @@
-import React, { useMemo } from "react";
-import { GoogleMap, Marker, useLoadScript } from "@react-google-maps/api";
+import React from "react";
+import customMarkerImage from "public/next.svg";
+import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 
 const Map = () => {
     const { isLoaded } = useLoadScript({
@@ -26,21 +27,38 @@ const Map = () => {
 
     if (!isLoaded) {
         return (
-            <div className="flex items-center justify-center w-full h-screen rounded-2xl bg-lightGray">
+            <div className="flex items-center justify-center w-full rounded-2xl bg-lightGray lg:aspect-square lg:h-screen">
                 Loading...
             </div>
         );
     }
 
     return (
-        <div className="w-full h-screen overflow-hidden rounded-2xl bg-lightGray">
+        <div className="w-full overflow-hidden aspect-square rounded-2xl bg-lightGray lg:aspect-auto lg:h-screen xl:aspect-square">
             <GoogleMap
                 mapContainerStyle={containerStyle}
                 center={center}
                 zoom={20}
-            ></GoogleMap>
+            >
+                <CustomMarker />
+            </GoogleMap>
         </div>
     );
 };
 
 export default Map;
+
+const CustomMarker = () => {
+    return (
+        <Marker
+            position={{
+                lat: 27.700769,
+                lng: 85.30014,
+            }}
+            icon={{
+                url: customMarkerImage,
+                scaledSize: new window.google.maps.Size(40, 40),
+            }}
+        />
+    );
+};

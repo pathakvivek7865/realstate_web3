@@ -2,15 +2,18 @@ import Image from "next/image";
 import React from "react";
 import { AiFillHeart } from "react-icons/ai";
 import { BiBuildingHouse } from "react-icons/bi";
-
+import { RxHamburgerMenu } from "react-icons/rx";
 const Navbar = () => {
     return (
-        <nav className="flex items-center w-full px-16 mt-4 ">
-            <div className="flex items-center w-3/12">
+        <nav className="flex items-center justify-between w-full px-4 mt-4 lg:justify-start lg:px-16 ">
+            <div className="flex items-center lg:w-3/12">
                 <BiBuildingHouse className="text-3xl text-primary" />
-                <p className="text-2xl font-bold ">RealEstate</p>
+                <p className="ml-1 text-2xl font-bold ">RealEstate</p>
             </div>
-            <div className="flex items-center justify-between flex-1">
+            <div className="block lg:hidden">
+                <RxHamburgerMenu className="text-3xl text-darkGray" />
+            </div>
+            <div className="items-center justify-between flex-1 hidden lg:flex">
                 <ul className="flex space-x-16 text-sm font-medium">
                     <li className="cursor-pointer text-primary">
                         <p>Search</p>
