@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import customMarkerImage from "public/next.svg";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";

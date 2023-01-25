@@ -16,9 +16,11 @@ export default function RootLayout({
         >
             <head />
             <body>
-                <Navbar />
+                <div className="mx-4 lg:mx-16">
+                    <Navbar />
 
-                {children}
+                    {children}
+                </div>
             </body>
         </html>
     );

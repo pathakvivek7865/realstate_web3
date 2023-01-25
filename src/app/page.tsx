@@ -1,13 +1,11 @@
-"use client";
-
 import PropertyCard from "@components/cards/PropertyCard";
 import { MdMoreHoriz } from "react-icons/md";
 import FilterInputs from "@components/inputs/FilterInputs";
 import Map from "@components/map/Map";
 
-export default function Home() {
+export default async function Home() {
     return (
-        <main className="mx-4 mb-16 text-textBlack lg:mx-16 ">
+        <main className="mb-16 text-textBlack ">
             <div className="sticky top-0 z-20 py-6 bg-white">
                 <FilterInputs />
             </div>

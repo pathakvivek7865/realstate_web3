@@ -5,6 +5,7 @@ import { IoIosBed } from "react-icons/io";
 import { FaBath } from "react-icons/fa";
 import { GiPoland } from "react-icons/gi";
 import { AiFillHeart } from "react-icons/ai";
+import Link from "next/link";
 
 interface PropertyCardProps {
     imageUrl: string;
@@ -26,14 +27,17 @@ const PropertyCard = ({
     sqft,
 }: PropertyCardProps) => {
     return (
-        <div className="flex h-[18rem] w-full cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-md">
+        <Link
+            href={`/${price}`}
+            className="flex h-[18rem] w-full cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-md"
+        >
             <div className="relative w-full overflow-hidden h-1/2 rounded-2xl bg-primary">
                 <Image
                     src={imageUrl}
                     alt=""
                     width={300}
                     height={200}
-                    className="h-[158px] w-full object-cover"
+                    className="h-[158px] w-full shrink-0 object-cover"
                 />
                 <div className="absolute z-10 flex items-center justify-between space-x-2 text-xs font-medium text-white top-3 left-3">
                     <div className="px-2 py-1 bg-green-500 rounded-md">New</div>
@@ -69,7 +73,7 @@ const PropertyCard = ({
                     </div>
                 </div>
             </div>
-        </div>
+        </Link>
     );
 };
 
