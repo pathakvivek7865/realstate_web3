@@ -28,10 +28,10 @@ const PropertyCard = ({
 }: PropertyCardProps) => {
     return (
         <Link
-            href={`/${price}`}
-            className="flex h-[18rem] w-full cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-md"
+            href={`/properties/${price}`}
+            className="flex h-[18rem] w-full cursor-pointer flex-col overflow-hidden rounded-2xl bg-white shadow-md lg:hover:shadow-xl "
         >
-            <div className="relative w-full overflow-hidden h-1/2 rounded-2xl bg-primary">
+            <div className="relative w-full overflow-hidden h-1/2 rounded-2xl bg-primary ">
                 <Image
                     src={imageUrl}
                     alt=""

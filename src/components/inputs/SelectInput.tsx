@@ -26,7 +26,7 @@ export default function SelectInput({ selectList, label }: SelectInputProps) {
             {({ open }) => (
                 <>
                     <div className="relative">
-                        <Listbox.Button className="relative w-full h-full py-2 pl-3 pr-10 my-2 text-sm font-semibold text-left rounded-lg shadow-sm cursor-pointer bg-lightGray text-textBlack focus:outline-none lg:my-0">
+                        <Listbox.Button className="relative w-full py-2 pl-3 pr-10 my-2 text-xs font-semibold text-left rounded-lg shadow-sm cursor-pointer h-9 bg-lightGray text-textBlack focus:outline-none lg:my-0">
                             <span className="flex items-center whitespace-nowrap">
                                 <Listbox.Label className="block ml-1 ">
                                     {label}

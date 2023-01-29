@@ -1,5 +1,5 @@
 import { DM_Sans } from "@next/font/google";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 
 const font = DM_Sans({ weight: ["400", "500", "700"], subsets: ["latin"] });
