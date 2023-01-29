@@ -13,7 +13,7 @@ export default async function Home() {
                 {/* Left panel */}
                 <div className="flex flex-col items-center justify-between w-full h-full max-h-screen lg:h-screen ">
                     {/* Cards grid */}
-                    <div className="grid h-full w-full flex-1 grid-flow-row gap-6  pb-6 scrollbar-thin  scrollbar-track-lightGray  scrollbar-thumb-darkGray  sm:grid-cols-2 lg:h-[20rem]  lg:overflow-y-scroll  lg:pr-6 ">
+                    <div className="grid h-full w-full flex-1 grid-flow-row gap-6  pb-4 pr-4  scrollbar-thin  scrollbar-track-lightGray  scrollbar-thumb-darkGray sm:grid-cols-2  lg:h-[20rem] lg:overflow-y-scroll lg:pr-6 ">
                         <Cards />
                     </div>
                     {/* More Button */}

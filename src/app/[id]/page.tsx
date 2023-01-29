@@ -5,7 +5,10 @@ import { FaBath } from "react-icons/fa";
 import { GiPoland } from "react-icons/gi";
 import { IoIosBed } from "react-icons/io";
 
-const PropertyDeatailPage = () => {
+const PropertyDeatailPage = async () => {
+    // await for 3 second
+    await new Promise((resolve) => setTimeout(resolve, 3000));
+
     return (
         <div className="mt-4 mb-8">
             {/* <h1 className="text-3xl font-bold">Appartment</h1> */}
@@ -163,7 +166,7 @@ const PropertyDeatailPage = () => {
                         voluptas? Corporis expedita a aut cupiditate ratione.
                     </p>
                 </div>
-                <div className="h-full w-full flex-[2] overflow-hidden rounded-2xl bg-lightGray">
+                <div className="h-full w-full flex-[2] overflow-hidden rounded-2xl border border-darkGray border-opacity-25 ">
                     <Map />
                 </div>
             </div>
